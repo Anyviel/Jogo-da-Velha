@@ -1,0 +1,35 @@
+#tabuleiro {
+    width: 240px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+#mensagem {
+    font-size: 20px;
+    color: #10c910;
+}
+
+.area {
+    height: 80px;
+    width: 80px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area.simbo-x::after {
+    display: block;
+    content: "⨯";	
+    font-size: 80px;
+}
+
+.area.simbo-o::after {
+    display: block;
+    content: "◯";
+    font-size: 80px;
+}
+
